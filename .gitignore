@@ -9,6 +9,9 @@
 /app/public/wp-content/index.php
 /app/public/wp-content/languages
 /app/public/wp-content/plugins/index.php
+/app/public/wp-content/plugins/fakerpress
+/app/public/wp-content/plugins/theme-check
+/app/public/wp-content/plugins/wordpress-importer
 /app/sql
 /app/public/wp-content/plugins/index.php
 /app/public/wp-content/themes/index.php
