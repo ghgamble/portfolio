@@ -7,16 +7,16 @@
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
         </h2>
         <div>
-            <?php portfolio_post_meta(); ?>
+            <?php _themename_post_meta(); ?>
         </div>
         <div>
             <?php the_excerpt(); ?>
         </div>
-        <?php portfolio_readmore_link(); ?>
+        <?php _themename_readmore_link(); ?>
     <?php } ?>
     <?php the_posts_pagination(); ?>
 <?php } else { ?>
-    <p><?php esc_html_e('Sorry, no posts matched your criteria.', 'portfolio')?></p>
+    <p><?php esc_html_e('Sorry, no posts matched your criteria.', '_themename')?></p>
 <?php } ?>
 
 <?php get_footer(); ?>

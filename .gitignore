@@ -15,6 +15,7 @@
 /app/sql
 /app/public/wp-content/plugins/index.php
 /app/public/wp-content/themes/index.php
+/app/public/wp-content/themes/portfolio-theme/dist
 /app/public/wp-content/themes/wp-custom/assets
 /app/public/wp-includes/
 /app/public/index.php
