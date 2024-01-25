@@ -1,16 +1,31 @@
 <?php 
 
 function portfolio_post_meta() {
-    echo 'Posted on '; 
-        echo '<a href="' . esc_url(get_permalink()) . '">';
-            echo '<time datetime="' . esc_attr(get_the_date('c')) . '">' . esc_html(get_the_date()) .'</time>';
-        echo '</a>';
-    echo ' By <a href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a>';
+    /* Translators: %s: Post Date */
+    printf(
+        esc_html__('Posted on %s', 'portfolio'),
+        '<a href="' . esc_url(get_permalink()) . '"> <time datetime="' . esc_attr(get_the_date('c')) . '">' . esc_html(get_the_date()) .'</time></a>'
+    );
+    /* Translators: %s: Post Author */
+    printf(
+        esc_html__(' By %s', 'portfolio'),
+        '<a href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a>'
+    );
 }
 
 function portfolio_readmore_link() {
     echo '<a href="' . esc_url(get_permalink()) . '" title="' . the_title_attribute(['echo' => false]) . '">';
-        echo 'Read More';
-        echo '<span class="u-screen-reader-text">' . the_title() . '</span>';
+    /* Translators: %s: Post Title */
+    printf(
+        wp_kses(
+            __('Read More <span class="u-screen-reader-text">About %s</span>', 'portfolio'),
+            [
+                'span' => [
+                    'class'=> []
+                ]
+            ]
+        ), 
+        get_the_title()
+    );
     echo '</a>';
 }

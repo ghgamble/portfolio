@@ -16,7 +16,7 @@
     <?php } ?>
     <?php the_posts_pagination(); ?>
 <?php } else { ?>
-    <p>Sorry, no posts matched your criteria.</p>
+    <p><?php esc_html_e('Sorry, no posts matched your criteria.', 'portfolio')?></p>
 <?php } ?>
 
 <?php get_footer(); ?>
