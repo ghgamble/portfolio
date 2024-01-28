@@ -14,7 +14,7 @@ function _themename_post_meta() {
 }
 
 function _themename_readmore_link() {
-    echo '<a href="' . esc_url(get_permalink()) . '" title="' . the_title_attribute(['echo' => false]) . '">';
+    echo '<a class="c-post__readmore" href="' . esc_url(get_permalink()) . '" title="' . the_title_attribute(['echo' => false]) . '">';
     /* Translators: %s: Post Title */
     printf(
         wp_kses(

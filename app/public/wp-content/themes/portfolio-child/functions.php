@@ -6,15 +6,15 @@ function portfolio_child_scripts() {
 }
 add_action('wp_enqueue_scripts', 'portfolio_child_scripts');
 
-function after_pagination($x) {
-    echo $x;
-    echo 'test';
-}
-add_action('_themename_after_pagination', 'after_pagination');
+// function after_pagination($x) {
+//     echo $x;
+//     echo 'test';
+// }
+// add_action('_themename_after_pagination', 'after_pagination');
 
-function function_to_add($query) {
-    if($query->is_main_query()) {
-        $query->set('posts_per_page', 2);
-    }
-}
-add_action('pre_get_posts','function_to_add', 10, 1);
+// function function_to_add($query) {
+//     if($query->is_main_query()) {
+//         $query->set('posts_per_page', 2);
+//     }
+// }
+// add_action('pre_get_posts','function_to_add', 10, 1);
