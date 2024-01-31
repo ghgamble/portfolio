@@ -13,7 +13,7 @@ add_action('wp_enqueue_scripts', 'portfolio_child_scripts');
 // add_action('_themename_after_pagination', 'after_pagination');
 
 function function_to_add($query) {
-    if($query->is_main_query()) {
+    if($query->is_main_query() && !is_admin()) {
         $query->set('posts_per_page', 3);
     }
 }

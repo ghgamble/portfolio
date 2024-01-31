@@ -14,7 +14,7 @@ $inline_styles_selectors = array(
         'background-color' => '_themename_accent_colour'
     ),
     '.header-nav .menu > .menu-item.mega > .sub-menu > .menu-item > .sub-menu a:hover, .header-nav .menu > .menu-item.mega > .sub-menu > .menu-item > a:hover' => array(
-        'background-color' => '_themename_accent_colour'
+        'color' => '_themename_accent_colour'
     ),
     '.c-header' => array(
         'background-color' => '_themename_header_colour'

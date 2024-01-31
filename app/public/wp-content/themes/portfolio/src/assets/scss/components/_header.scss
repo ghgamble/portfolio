@@ -131,5 +131,14 @@
         img {
             max-width: 200px;
         }
+        a {
+            border-bottom: none;
+        }
+        a:hover {
+            border-bottom: none;
+        }
+        a:visited {
+            border-bottom: none;
+        }
     }
 }
