@@ -1,6 +1,8 @@
 import $ from 'jquery';
 import './components/slider.js';
 import './components/navigation.js';
+import './components/mobile.js';
+
 
 let x = 0;
 

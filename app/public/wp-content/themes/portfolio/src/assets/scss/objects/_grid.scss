@@ -34,3 +34,12 @@ $gutter: 20;
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .c-header {
+        .o-container {
+            display: block;
+            text-align: center;
+        }
+    }
+}

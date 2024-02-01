@@ -25,6 +25,10 @@
                     <nav class="header-nav" role="navigation" aria-label="<?php esc_html_e('Main Navigation', '_themename') ?>">
                         <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
                     </nav>
+                    <nav id="site-navigation" class="main-navigation" role="navigation">
+                        <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                        <div class="main-mobile-menu close"><?php wp_nav_menu(array('theme_location' => 'main-menu')); ?></div>
+                    </nav>
                 </div>
             </div>
         </header>

@@ -11,3 +11,9 @@
         height: 40px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .c-search-form {
+        display: none;
+    }
+}

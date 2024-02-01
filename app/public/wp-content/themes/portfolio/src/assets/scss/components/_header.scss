@@ -142,3 +142,35 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    nav.header-nav {
+        display: none;
+    }
+    .c-header {
+        padding: 0.75rem 0;
+    }
+    .c-navigation {
+        .o-container {
+            padding-left: 0;
+            padding-right: 0;
+            background-color: #00d885;
+            padding-bottom: 0.25rem;
+            a {
+                color: #fff;
+                border-bottom: none;
+            }
+            button {
+                background-color: #00d885;
+                padding-left: 0.5rem;
+                margin-top: 0.25rem;
+            }
+            &:visited {
+                background-color: #00d885;
+            }
+            &:focus {
+                background-color: #00d885;
+            }
+        }
+    }
+}

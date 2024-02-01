@@ -1,0 +1,22 @@
+#site-navigation {
+    display: none;
+}
+.main-mobile-menu.open {
+    display: block;
+}
+.main-mobile-menu.close {
+    display: none;
+}
+.main-mobile-menu {
+    padding-left: 0.5rem;
+    ul {
+        list-style-type: none;
+        margin-left: 0;
+    }
+}
+    
+@media screen and (max-width: 600px) {
+    #site-navigation {
+        display: block;
+    }
+}
