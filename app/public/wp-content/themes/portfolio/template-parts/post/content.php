@@ -19,15 +19,17 @@
                 <h2 class="c-post__title">
                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                 </h2>
+                <div class="c-post__meta">
+                    <?php _themename_post_meta(); ?>
+                </div>
             <?php } ?>
-            <div class="c-post__meta">
-                <?php _themename_post_meta(); ?>
-            </div>
         </header>
 
         <?php if(is_single()) { ?>
             <div class="c-post__content">
-                <?php the_content(); ?>
+                <?php the_content(); 
+                wp_link_pages();
+                ?>
             </div>
         <?php } else { ?>
             <div class="c-post__excerpt">
