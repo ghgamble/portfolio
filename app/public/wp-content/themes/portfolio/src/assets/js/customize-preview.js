@@ -18,6 +18,16 @@ wp.customize( '_themename_display_author_info', (value) => {
     } )
 })
 
+wp.customize( '_themename_display_author_info', (value) => {
+    value.bind( (to) => {
+        if(to) {
+            $('.c-post-author').show();
+        } else {
+            $('.c-post-author').hide();
+        }
+    } )
+})
+
 wp.customize( '_themename_accent_colour', (value) => {
     value.bind( (to) => {
         let inline_css = ``;
