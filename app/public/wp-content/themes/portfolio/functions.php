@@ -8,6 +8,7 @@ require_once('lib/theme-support.php');
 require_once('lib/navigation.php');
 require_once('lib/comment-callback.php');
 
+
 function _themename_handle_delete_post() {
     if(isset($_GET['action']) && $_GET['action'] === '_themename_delete_post') {
         if(!isset($_GET['nonce']) || !wp_verify_nonce($_GET['nonce'], '_themename_delete_post_' . $_GET['post'])) {
