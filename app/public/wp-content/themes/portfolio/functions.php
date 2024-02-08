@@ -9,3 +9,4 @@ require_once('lib/navigation.php');
 require_once('lib/comment-callback.php');
 require_once('lib/portfolio.php');
 require_once('lib/delete-post.php');
+require_once('lib/most-recent-widget.php');
