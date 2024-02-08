@@ -18,6 +18,7 @@ function _themename__pluginname_register_project_type_tax() {
         'labels' => $labels,
         'hierarchical' => true,
         'show_admin_column' => true,
+        'rewrite' => ['slug' => 'project-type'],
         'show_in_rest' => true
     );
     register_taxonomy('_themename_project_type', ['_themename_portfolio'], $args);
