@@ -65,6 +65,18 @@ function _themename_customize_register($wp_customize) {
         )
     ));
 
+    $wp_customize->add_setting('_themename_portfolio_slug', array(
+        'default'=> 'portfolio',
+        'transport' => 'postMessage',
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    $wp_customize->add_control('_themename_portfolio_slug', array(
+        'type'  => 'text',
+        'label'    => esc_html__('Portfolio Slug', '_themename'),
+        'description' => esc_html__('Will appear in the archive url', '_themename'),
+        'section'  => '_themename_general_options'
+    ));
+
     // Footer
     $wp_customize->selective_refresh->add_partial('_themename_footer_partial', array(
         'settings' => array('_themename_footer_bg', '_themename_footer_layout'),
