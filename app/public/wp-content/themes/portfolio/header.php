@@ -26,7 +26,7 @@
                         <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
                     </nav>
                     <nav id="site-navigation" class="main-navigation" role="navigation">
-                        <button class="menu-toggle"><i class="fa fa-solid fa-bars"></i></button>
+                        <button class="menu-toggle"><i class="fa fa-solid fa-bars" aria-hidden></i></button>
                         <div class="main-mobile-menu close"><?php wp_nav_menu(array('theme_location' => 'main-menu')); ?></div>
                     </nav>
                 </div>
